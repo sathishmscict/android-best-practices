@@ -452,7 +452,7 @@ You still need to write some parsing code yourself to read the data objects from
 
 #### Using an ORM
 
-**[SugerORM](https://android-arsenal.com/)** Keep the database clean. Not need to write queries by yourself and handling `SqliteHelper` classes. Let the ORM do the job. 
+**[SugerORM](https://github.com/satyan/sugar)** Keep the database clean. Not need to write queries by yourself and handling `SqliteHelper` classes. Let the ORM do the job. 
 
 #### License 
 
