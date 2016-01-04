@@ -50,10 +50,10 @@ new-structure
 │  ├─ src
 │  │  ├─ androidTest
 │  │  │  └─ java
-│  │  │     └─ com/tagcash/project
+│  │  │     └─ com/noman/project
 │  │  └─ main
 │  │     ├─ java
-│  │     │  └─ com/tagcash/project
+│  │     │  └─ com/noman/project
 │  │     ├─ res
 │  │     └─ AndroidManifest.xml
 │  ├─ build.gradle
@@ -146,7 +146,7 @@ Some controller classes are application-wide and close to the Android system. Th
 All in all, ordered from the closest-to-backend to the closest-to-the-user:
 
 ```
-com.tagcash.project
+com.noman.project
 ├─ network
 ├─ models
 ├─ managers
@@ -411,12 +411,12 @@ Check `app/build/outputs/proguard/release/mapping.txt` to see if the object in q
 
 In order to prevent ProGuard from *stripping away* needed classes or class members, add a `keep` options to your ProGuard config:
 ```
--keep class com.tagcash.project.MyClass { *; }
+-keep class com.noman.project.MyClass { *; }
 ```
 
 To prevent ProGuard from *obfuscating* classes or class members, add a `keepnames`:
 ```
--keepnames class com.tagcash.project.MyClass { *; }
+-keepnames class com.noman.project.MyClass { *; }
 ```
 
 Check [this template's ProGuard config](https://guides.codepath.com/android/Configuring-ProGuard) for some examples.
