@@ -160,7 +160,7 @@ com.noman.project
 ```
 ### View Injection
 
-**[Butterknife](http://jakewharton.github.io/butterknife/)** Use this library for view injection. Its a must have library for Android devs. No need to use `findViewById()`, it do the job for you. 
+**[Butterknife](http://jakewharton.github.io/butterknife/)** Use this library for view injection. Its a must have library for Android devs. No need to use `findViewById()`, it will do the job for you. 
 Along with this lib, use **[ButterKnife Zelezny](https://github.com/avast/android-butterknife-zelezny)** an Android Studio plugin to generate the Views for you. 
 
 ```java
