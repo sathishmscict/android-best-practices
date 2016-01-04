@@ -158,6 +158,26 @@ com.noman.project
    ├─ widgets
    └─ notifications
 ```
+### View Injection
+
+**[Butterknife](http://jakewharton.github.io/butterknife/)** Use this library for view injection. Its a must have library for Android devs. No need to use `findViewById()`, it do the job for you. 
+Along with this lib, use **[ButterKnife Zelezny](https://github.com/avast/android-butterknife-zelezny)** an Android Studio plugin to generate the Views for you. 
+
+```java
+class ExampleActivity extends Activity {
+  @Bind(R.id.title) TextView title;
+  @Bind(R.id.subtitle) TextView subtitle;
+  @Bind(R.id.footer) TextView footer;
+
+  @Override public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.simple_activity);
+    ButterKnife.bind(this);
+    // TODO Use fields...
+  }
+}
+```
+
 
 ### Resources
 
